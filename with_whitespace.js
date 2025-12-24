@@ -1,7 +1,7 @@
 (() => {
 	const addQueryParam = () => {
 		const prPageRegex =
-			/^https:\/\/github.com\/([^\/]+)\/([^\/]+)\/pull\/\d+\/(files|commits\/\w)/;
+			/^https:\/\/github.com\/([^\/]+)\/([^\/]+)\/pull\/\d+\/(files|commits|changes\/\w)/;
 		const match = window.location.href.match(prPageRegex);
 		if (!match) {
 			return;
